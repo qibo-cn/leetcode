@@ -3,12 +3,14 @@
         {
             "type": "shell",
             "label": "gcc.exe build active file",
-            "command": "D:\\MinGW\\bin\\gcc.exe",
+            "command": "D:/MinGW/bin/gcc.exe",
             "args": [
                 "-g",
-                "${file}",
+                //"${file}",
+                "D:/work/leetcode/13.c",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                // "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "D:/work/leetcode/out.exe"
             ],
             "options": {
                 "cwd": "D:\\MinGW\\bin"
