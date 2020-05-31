@@ -8,14 +8,6 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
-{
-
-    char *s = "MCMXCIV";
-    printf("%d\n", romanToInt(s));
-    system("pause");
-    return 0;
-}
 
 int romanToInt(char *s)
 {
