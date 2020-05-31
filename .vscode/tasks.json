@@ -1,21 +1,20 @@
 {
-    "tasks": [
-        {
-            "type": "shell",
-            "label": "gcc.exe build active file",
-            "command": "D:/MinGW/bin/gcc.exe",
-            "args": [
-                "-g",
-                //"${file}",
-                "D:/work/leetcode/13.c",
-                "-o",
-                // "${fileDirname}\\${fileBasenameNoExtension}.exe"
-                "D:/work/leetcode/out.exe"
-            ],
-            "options": {
-                "cwd": "D:\\MinGW\\bin"
-            }
+    "tasks": [{
+        "type": "shell",
+        "label": "gcc.exe build active file",
+        "command": "D:/MinGW/bin/gcc.exe",
+        "args": [
+            "-g",
+            // "-fsanitize=address",
+            //"${file}",
+            "D:/work/leetcode/26.c",
+            "-o",
+            // "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            "D:/work/leetcode/out.exe"
+        ],
+        "options": {
+            "cwd": "D:\\MinGW\\bin"
         }
-    ],
+    }],
     "version": "2.0.0"
 }
