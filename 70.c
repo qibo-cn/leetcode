@@ -32,6 +32,11 @@ int calc(int *data, int n) {
 }
 
 int climbStairs(int n) {
+
+  if (n == 1)
+    return 1;
+  if (n == 2)
+    return 2;
   int *data = (int *)malloc((n + 1) * sizeof(int));
   //   memset(data, 0, n + 1);
   data[1] = 1;
