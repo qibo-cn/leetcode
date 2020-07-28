@@ -7,9 +7,9 @@
             "-g",
             // "-fsanitize=address",
             //"${file}",
-            "D:/work/leetcode/26.c",
+            "D:/work/leetcode/3.c",
             "-o",
-            // "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            // "${fileDirname}\\${file3BasenameNoExtension}.exe"
             "D:/work/leetcode/out.exe"
         ],
         "options": {

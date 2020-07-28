@@ -65,40 +65,34 @@ int hasSame(char *s, int k, int j) {
   }
   return 0;
 }
+
 int lengthOfLongestSubstring(char *s) {
-  int len = strlen(s);
-  if (len == 1)
-    return 1;
-  if (len == 0)
-    return 0;
-  int count = 1;
-  int res = 0;
-  int flag = 0;
-  for (int i = 0; i < len;) {
-    for (int j = i + 1; j < len;) {
-      if (0 == hasSame(s, i, j)) {
-        count++;
+  int len = strlen(s), i = 0, j = 0, count = 0, flag = 0, res = 0;
+  for (i = 0; i < len;) {
+    for (j = i + 1; j < len;) {
+      if (hasSame(s, i, j) == 0) {
         j++;
-        flag = 0;
-      } else {
-        count = 1;
-        i++;
+        count++;
         flag = 1;
+        res = res > count ? res : count;
+      } else {
+        i++;
+        flag = 0;
         break;
       }
-
-      res = res > count ? res : count;
     }
-    if (flag == 0) {
-      count = 1;
+    if (flag == 1) {
       i++;
+    } else {
+      continue;
     }
   }
 
   return res;
 }
 // int main() {
-//   lengthOfLongestSubstring("abcabcbb");
+//   char *s = "abcabcbb";
+//   lengthOfLongestSubstring(s);
 //   system("pause");
 //   return 0;
 // }

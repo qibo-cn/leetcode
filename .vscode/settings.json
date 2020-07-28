@@ -3,7 +3,8 @@
         "stdio.h": "c",
         "cstdlib": "c"
     },
+
     "editor.formatOnSave": true,
     "C_Cpp.clang_format_path": "file",
-    "clang-format.executable": "C:\\\\Users\\\\Administrator\\\\.vscode\\\\extensions\\\\ms-vscode.cpptools-0.28.1\\\\LLVM\\\\bin\\\\clang-format"
+    "clang-format.executable": "D:\\work\\leetcode\\clang-format"
 }
