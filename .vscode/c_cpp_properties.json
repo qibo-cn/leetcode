@@ -4,17 +4,19 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:/MinGW/include"
+                "/Library/Developer/CommandLineTools/usr/include/c++/v1/",
+                "Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/",
+                "Library/Developer/CommandLineTools/usr/include/"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "D:\\MinGW\\bin\\gcc.exe",
+            "compilerPath": "/usr/bin/clang",
             "cStandard": "c99",
             "cppStandard": "c++17",
-            "intelliSenseMode": "${default}"
+            "intelliSenseMode": "clang-x64"
         }
     ],
     "version": 4

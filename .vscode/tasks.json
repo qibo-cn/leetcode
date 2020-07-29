@@ -1,20 +1,25 @@
 {
-    "tasks": [{
-        "type": "shell",
-        "label": "gcc.exe build active file",
-        "command": "D:/MinGW/bin/gcc.exe",
-        "args": [
-            "-g",
-            // "-fsanitize=address",
-            //"${file}",
-            "D:/work/leetcode/3.c",
-            "-o",
-            // "${fileDirname}\\${file3BasenameNoExtension}.exe"
-            "D:/work/leetcode/out.exe"
-        ],
-        "options": {
-            "cwd": "D:\\MinGW\\bin"
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "clang build active file",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-g",
+                "/Users/kenny/work/leetcode/leetcode/hello.c",
+                "-o",
+                "/Users/kenny/work/leetcode/leetcode/a.out",
+                "&&",
+                "/Users/kenny/work/leetcode/leetcode/a.out"
+            ],
+            "options": {
+                "cmd": "/usr/bin"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
-    }],
+    ],
     "version": "2.0.0"
 }
